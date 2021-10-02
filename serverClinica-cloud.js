@@ -19,6 +19,9 @@ app.use((req, res, next) => {
     next();
 });
 //----------------------------------
+app.get('/', (req,res) => {
+	console.log("server de pé.");
+});
 
 //>>>>>>>>> Função cadastrarPaciente  <<<<<<<<<<	
 app.post('/cadastrarPaciente', (req, res) => { 

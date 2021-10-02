@@ -21,6 +21,7 @@ app.use((req, res, next) => {
 //----------------------------------
 app.get('/', (req,res) => {
 	console.log("server de pé.");
+	return response.send("server de pé.");
 });
 
 //>>>>>>>>> Função cadastrarPaciente  <<<<<<<<<<	

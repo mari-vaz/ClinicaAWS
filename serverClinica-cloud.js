@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 //----------------------------------
 
 //>>>>>>>>> Função de teste de conexão  <<<<<<<<<<
-app.post('/cadastrarPaciente', (req, res) => { 
+app.post('/', (req, res) => { 
 	var hoje = new Date();
 	console.log("servidor online às "+hoje);
 	res.send("servidor online às "+hoje);

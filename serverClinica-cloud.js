@@ -19,9 +19,12 @@ app.use((req, res, next) => {
     next();
 });
 //----------------------------------
-app.get('/', (req,res) => {
-	console.log("server de pé.");
-	res.send("server de pé.");
+
+//>>>>>>>>> Função de teste de conexão  <<<<<<<<<<
+app.post('/cadastrarPaciente', (req, res) => { 
+	var hoje = new Date();
+	console.log("servidor online às "+hoje);
+	res.send("servidor online às "+hoje);
 });
 
 //>>>>>>>>> Função cadastrarPaciente  <<<<<<<<<<	
